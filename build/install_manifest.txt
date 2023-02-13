@@ -1,0 +1,8 @@
+/usr/local/lib/cmake/SigC++/SigC++Config.cmake
+/usr/local/lib/cmake/SigC++/SigC++ConfigVersion.cmake
+/usr/local/lib/cmake/SigC++/sigc++Config.cmake
+/usr/local/lib/libsigc-2.0.a
+/usr/local/lib/SigC++/include/sigc++config.h
+/usr/local/lib/libsigc-2.0.a
+/usr/local/lib/cmake/SigC++/SigC++Targets.cmake
+/usr/local/lib/cmake/SigC++/SigC++Targets-noconfig.cmake
