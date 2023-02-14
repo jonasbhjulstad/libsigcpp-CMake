@@ -71,6 +71,7 @@ preinstall: sigc++/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/autogen.dir/clean
 clean: sigc++/clean
 .PHONY : clean
 
@@ -90,10 +91,36 @@ sigc++/clean: sigc++/CMakeFiles/SigCpp.dir/clean
 .PHONY : sigc++/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/autogen.dir
+
+# All Build rule for target.
+CMakeFiles/autogen.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autogen.dir/build.make CMakeFiles/autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autogen.dir/build.make CMakeFiles/autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/man/sigc++-cmake/build/CMakeFiles --progress-num= "Built target autogen"
+.PHONY : CMakeFiles/autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/man/sigc++-cmake/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/man/sigc++-cmake/build/CMakeFiles 0
+.PHONY : CMakeFiles/autogen.dir/rule
+
+# Convenience name for target.
+autogen: CMakeFiles/autogen.dir/rule
+.PHONY : autogen
+
+# clean rule for target.
+CMakeFiles/autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autogen.dir/build.make CMakeFiles/autogen.dir/clean
+.PHONY : CMakeFiles/autogen.dir/clean
+
+#=============================================================================
 # Target rules for target sigc++/CMakeFiles/SigCpp.dir
 
 # All Build rule for target.
-sigc++/CMakeFiles/SigCpp.dir/all:
+sigc++/CMakeFiles/SigCpp.dir/all: CMakeFiles/autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f sigc++/CMakeFiles/SigCpp.dir/build.make sigc++/CMakeFiles/SigCpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f sigc++/CMakeFiles/SigCpp.dir/build.make sigc++/CMakeFiles/SigCpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/man/sigc++-cmake/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target SigCpp"

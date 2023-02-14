@@ -1,3 +1,4 @@
+/home/man/sigc++-cmake/build/CMakeFiles/autogen.dir
 /home/man/sigc++-cmake/build/CMakeFiles/edit_cache.dir
 /home/man/sigc++-cmake/build/CMakeFiles/rebuild_cache.dir
 /home/man/sigc++-cmake/build/CMakeFiles/list_install_components.dir
