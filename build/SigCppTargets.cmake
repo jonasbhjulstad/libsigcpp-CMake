@@ -50,7 +50,7 @@ unset(_cmake_expected_targets)
 add_library(SigCpp STATIC IMPORTED)
 
 set_target_properties(SigCpp PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/man/sigc++-cmake/sigc++"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/man/sigc++-cmake/sigc++/"
 )
 
 # Import target "SigCpp" for configuration ""

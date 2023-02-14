@@ -39,7 +39,7 @@ SET(SIGC_GCC_TEMPLATE_SPECIALIZATION_OPERATOR_OVERLOAD 1)
 endif()
 
 
-configure_file( ${CMAKE_CURRENT_SOURCE_DIR}/config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config.h )
-configure_file( ${CMAKE_CURRENT_SOURCE_DIR}/config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/sigc++/config.h )
-configure_file( ${CMAKE_CURRENT_SOURCE_DIR}/sigc++config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/sigc++config.h )
-configure_file( ${CMAKE_CURRENT_SOURCE_DIR}/sigc++config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/sigc++/sigc++config.h )
+configure_file( ${PROJECT_SOURCE_DIR}/config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config.h )
+configure_file( ${PROJECT_SOURCE_DIR}/config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/sigc++/config.h )
+configure_file( ${PROJECT_SOURCE_DIR}/sigc++config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/sigc++config.h )
+configure_file( ${PROJECT_SOURCE_DIR}/sigc++config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/sigc++/sigc++config.h )
