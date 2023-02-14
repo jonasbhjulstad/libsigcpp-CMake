@@ -15,3 +15,5 @@ include_directories(
 )
 
 add_subdirectory(sigc++)
+
+include(cmake/install.cmake)
