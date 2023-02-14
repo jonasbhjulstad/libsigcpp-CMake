@@ -1,4 +1,4 @@
-sigc++/CMakeFiles/sigc-2.0.dir/signal.cc.o: \
+sigc++/CMakeFiles/SigCpp.dir/signal.cc.o: \
  /home/man/sigc++-cmake/sigc++/signal.cc /usr/include/stdc-predef.h \
  /home/man/sigc++-cmake/sigc++/signal.h /usr/include/c++/12.2.1/list \
  /usr/include/c++/12.2.1/bits/stl_algobase.h \

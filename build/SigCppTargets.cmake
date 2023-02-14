@@ -19,7 +19,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_cmake_targets_defined "")
 set(_cmake_targets_not_defined "")
 set(_cmake_expected_targets "")
-foreach(_cmake_expected_target IN ITEMS sigc-2.0)
+foreach(_cmake_expected_target IN ITEMS SigCpp)
   list(APPEND _cmake_expected_targets "${_cmake_expected_target}")
   if(TARGET "${_cmake_expected_target}")
     list(APPEND _cmake_targets_defined "${_cmake_expected_target}")
@@ -46,47 +46,19 @@ unset(_cmake_targets_not_defined)
 unset(_cmake_expected_targets)
 
 
-# The installation prefix configured by this project.
-set(_IMPORT_PREFIX "/usr/local")
+# Create imported target SigCpp
+add_library(SigCpp STATIC IMPORTED)
 
-# Create imported target sigc-2.0
-add_library(sigc-2.0 STATIC IMPORTED)
-
-set_target_properties(sigc-2.0 PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/usr/local/lib/SigC++/include"
+set_target_properties(SigCpp PROPERTIES
+  INTERFACE_INCLUDE_DIRECTORIES "/home/man/sigc++-cmake/sigc++"
 )
 
-# Load information for each installed configuration.
-file(GLOB _cmake_config_files "${CMAKE_CURRENT_LIST_DIR}/SigC++Targets-*.cmake")
-foreach(_cmake_config_file IN LISTS _cmake_config_files)
-  include("${_cmake_config_file}")
-endforeach()
-unset(_cmake_config_file)
-unset(_cmake_config_files)
-
-# Cleanup temporary variables.
-set(_IMPORT_PREFIX)
-
-# Loop over all imported files and verify that they actually exist
-foreach(_cmake_target IN LISTS _cmake_import_check_targets)
-  foreach(_cmake_file IN LISTS "_cmake_import_check_files_for_${_cmake_target}")
-    if(NOT EXISTS "${_cmake_file}")
-      message(FATAL_ERROR "The imported target \"${_cmake_target}\" references the file
-   \"${_cmake_file}\"
-but this file does not exist.  Possible reasons include:
-* The file was deleted, renamed, or moved to another location.
-* An install or uninstall procedure did not complete successfully.
-* The installation package was faulty and contained
-   \"${CMAKE_CURRENT_LIST_FILE}\"
-but not all the files it references.
-")
-    endif()
-  endforeach()
-  unset(_cmake_file)
-  unset("_cmake_import_check_files_for_${_cmake_target}")
-endforeach()
-unset(_cmake_target)
-unset(_cmake_import_check_targets)
+# Import target "SigCpp" for configuration ""
+set_property(TARGET SigCpp APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
+set_target_properties(SigCpp PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
+  IMPORTED_LOCATION_NOCONFIG "/home/man/sigc++-cmake/build/sigc++/libSigCpp.a"
+  )
 
 # This file does not depend on other imported targets which have
 # been exported from the same project but in a separate export set.

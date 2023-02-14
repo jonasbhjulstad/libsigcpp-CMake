@@ -1,4 +1,4 @@
-sigc++/CMakeFiles/sigc-2.0.dir/functors/slot_base.cc.o: \
+sigc++/CMakeFiles/SigCpp.dir/functors/slot_base.cc.o: \
  /home/man/sigc++-cmake/sigc++/functors/slot_base.cc \
  /usr/include/stdc-predef.h \
  /home/man/sigc++-cmake/sigc++/functors/slot_base.h \

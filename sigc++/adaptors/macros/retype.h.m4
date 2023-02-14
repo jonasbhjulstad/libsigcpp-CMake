@@ -26,7 +26,7 @@ ifelse($1,0,[dnl
   template <LOOP(class T_arg%1, $1)>
   typename deduce_result_type<LOOP(T_arg%1,$1)>::type
   operator()(LOOP(T_arg%1 _A_a%1, $1))
-    { return this->functor_.SIGC_WORKAROUND_OPERATOR_PARENTHESES<LOOP(typename type_trait<T_type%1>::take, $1)>
+    { return this->functor_.template SIGC_WORKAROUND_OPERATOR_PARENTHESES<LOOP(typename type_trait<T_type%1>::take, $1)>
         (LOOP([[static_cast<T_type%1>(_A_a%1)]], $1));
     }
 
@@ -34,7 +34,7 @@ ifelse($1,0,[dnl
   template <LOOP(class T_arg%1, $1)>
   typename deduce_result_type<LOOP(T_arg%1,$1)>::type
   sun_forte_workaround(LOOP(T_arg%1 _A_a%1, $1))
-    { return this->functor_.SIGC_WORKAROUND_OPERATOR_PARENTHESES<LOOP(typename type_trait<T_type%1>::take, $1)>
+    { return this->functor_.template SIGC_WORKAROUND_OPERATOR_PARENTHESES<LOOP(typename type_trait<T_type%1>::take, $1)>
         (LOOP([[static_cast<T_type%1>(_A_a%1)]], $1));
     }
   #endif

@@ -104,7 +104,7 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/man/sigc++-cmake/build/CMakeFiles/pkgRedirects
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=/usr/local
+CMAKE_INSTALL_PREFIX:PATH=/home/man/sigc++-cmake/build
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=/usr/bin/ld
@@ -389,7 +389,7 @@ HAVE_SYS_STAT_H:INTERNAL=1
 HAVE_SYS_TYPES_H:INTERNAL=1
 //Have include unistd.h
 HAVE_UNISTD_H:INTERNAL=1
-SIGCPP_CONFIG_INSTALL_DIR:INTERNAL=/usr/local/lib/cmake/SigC++
+SIGCPP_CONFIG_INSTALL_DIR:INTERNAL=/home/man/sigc++-cmake/build/lib/cmake/SigCpp
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 

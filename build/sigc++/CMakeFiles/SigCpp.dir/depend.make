@@ -1,2 +1,2 @@
-# Empty dependencies file for sigc-2.0.
+# Empty dependencies file for SigCpp.
 # This may be replaced when dependencies are built.

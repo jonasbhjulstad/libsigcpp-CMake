@@ -1,4 +1,4 @@
-sigc++/CMakeFiles/sigc-2.0.dir/trackable.cc.o: \
+sigc++/CMakeFiles/SigCpp.dir/trackable.cc.o: \
  /home/man/sigc++-cmake/sigc++/trackable.cc /usr/include/stdc-predef.h \
  /home/man/sigc++-cmake/sigc++/trackable.h /usr/include/c++/12.2.1/list \
  /usr/include/c++/12.2.1/bits/stl_algobase.h \

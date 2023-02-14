@@ -1,4 +1,4 @@
-sigc++/CMakeFiles/sigc-2.0.dir/adaptors/lambda/lambda.cc.o: \
+sigc++/CMakeFiles/SigCpp.dir/adaptors/lambda/lambda.cc.o: \
  /home/man/sigc++-cmake/sigc++/adaptors/lambda/lambda.cc \
  /usr/include/stdc-predef.h \
  /home/man/sigc++-cmake/sigc++/adaptors/lambda/select.h \

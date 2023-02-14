@@ -1,4 +1,4 @@
-sigc++/CMakeFiles/sigc-2.0.dir/signal_base.cc.o: \
+sigc++/CMakeFiles/SigCpp.dir/signal_base.cc.o: \
  /home/man/sigc++-cmake/sigc++/signal_base.cc /usr/include/stdc-predef.h \
  /home/man/sigc++-cmake/sigc++/signal_base.h \
  /usr/include/c++/12.2.1/cstddef \

@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "/home/man/sigc++-cmake/build")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,73 +44,73 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/lib/SigC++/include/")
+   "/home/man/sigc++-cmake/build/lib/SigCpp/include/")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/lib/SigC++/include" TYPE DIRECTORY FILES "")
+  file(INSTALL DESTINATION "/home/man/sigc++-cmake/build/lib/SigCpp/include" TYPE DIRECTORY FILES "")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/lib/cmake/SigC++/SigC++Config.cmake;/usr/local/lib/cmake/SigC++/SigC++ConfigVersion.cmake")
+   "/home/man/sigc++-cmake/build/lib/cmake/SigCpp/SigCppConfig.cmake;/home/man/sigc++-cmake/build/lib/cmake/SigCpp/SigCppConfigVersion.cmake")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/lib/cmake/SigC++" TYPE FILE FILES
-    "/home/man/sigc++-cmake/build/SigC++Config.cmake"
-    "/home/man/sigc++-cmake/build/SigC++ConfigVersion.cmake"
+  file(INSTALL DESTINATION "/home/man/sigc++-cmake/build/lib/cmake/SigCpp" TYPE FILE FILES
+    "/home/man/sigc++-cmake/build/SigCppConfig.cmake"
+    "/home/man/sigc++-cmake/build/SigCppConfigVersion.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/lib/cmake/SigC++/sigc++Config.cmake")
+   "/home/man/sigc++-cmake/build/lib/cmake/SigCpp/SigCppConfig.cmake")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/lib/cmake/SigC++" TYPE FILE FILES "/home/man/sigc++-cmake/build/sigc++Config.cmake")
+  file(INSTALL DESTINATION "/home/man/sigc++-cmake/build/lib/cmake/SigCpp" TYPE FILE FILES "/home/man/sigc++-cmake/build/SigCppConfig.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/man/sigc++-cmake/build/sigc++/libsigc-2.0.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/man/sigc++-cmake/build/sigc++/libSigCpp.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/lib/SigC++/include/sigc++config.h")
+   "/home/man/sigc++-cmake/build/lib/SigCpp/include/sigc++config.h")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/lib/SigC++/include" TYPE FILE FILES "/home/man/sigc++-cmake/build/sigc++config.h")
+  file(INSTALL DESTINATION "/home/man/sigc++-cmake/build/lib/SigCpp/include" TYPE FILE FILES "/home/man/sigc++-cmake/build/sigc++config.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/man/sigc++-cmake/build/sigc++/libsigc-2.0.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/man/sigc++-cmake/build/sigc++/libSigCpp.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/usr/local/lib/cmake/SigC++/SigC++Targets.cmake")
+  if(EXISTS "$ENV{DESTDIR}/home/man/sigc++-cmake/build/lib/cmake/SigCpp/SigCppTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
-         "$ENV{DESTDIR}/usr/local/lib/cmake/SigC++/SigC++Targets.cmake"
-         "/home/man/sigc++-cmake/build/CMakeFiles/Export/c1d39d9c545ec2392c988a7bc9a1aebc/SigC++Targets.cmake")
+         "$ENV{DESTDIR}/home/man/sigc++-cmake/build/lib/cmake/SigCpp/SigCppTargets.cmake"
+         "/home/man/sigc++-cmake/build/CMakeFiles/Export/5eff4e424bc28fa364609dc097abba9e/SigCppTargets.cmake")
     if(_cmake_export_file_changed)
-      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}/usr/local/lib/cmake/SigC++/SigC++Targets-*.cmake")
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}/home/man/sigc++-cmake/build/lib/cmake/SigCpp/SigCppTargets-*.cmake")
       if(_cmake_old_config_files)
         string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
-        message(STATUS "Old export file \"$ENV{DESTDIR}/usr/local/lib/cmake/SigC++/SigC++Targets.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        message(STATUS "Old export file \"$ENV{DESTDIR}/home/man/sigc++-cmake/build/lib/cmake/SigCpp/SigCppTargets.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
         unset(_cmake_old_config_files_text)
         file(REMOVE ${_cmake_old_config_files})
       endif()
@@ -119,24 +119,24 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     unset(_cmake_export_file_changed)
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/lib/cmake/SigC++/SigC++Targets.cmake")
+   "/home/man/sigc++-cmake/build/lib/cmake/SigCpp/SigCppTargets.cmake")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/lib/cmake/SigC++" TYPE FILE FILES "/home/man/sigc++-cmake/build/CMakeFiles/Export/c1d39d9c545ec2392c988a7bc9a1aebc/SigC++Targets.cmake")
+  file(INSTALL DESTINATION "/home/man/sigc++-cmake/build/lib/cmake/SigCpp" TYPE FILE FILES "/home/man/sigc++-cmake/build/CMakeFiles/Export/5eff4e424bc28fa364609dc097abba9e/SigCppTargets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "/usr/local/lib/cmake/SigC++/SigC++Targets-noconfig.cmake")
+     "/home/man/sigc++-cmake/build/lib/cmake/SigCpp/SigCppTargets-noconfig.cmake")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "/usr/local/lib/cmake/SigC++" TYPE FILE FILES "/home/man/sigc++-cmake/build/CMakeFiles/Export/c1d39d9c545ec2392c988a7bc9a1aebc/SigC++Targets-noconfig.cmake")
+    file(INSTALL DESTINATION "/home/man/sigc++-cmake/build/lib/cmake/SigCpp" TYPE FILE FILES "/home/man/sigc++-cmake/build/CMakeFiles/Export/5eff4e424bc28fa364609dc097abba9e/SigCppTargets-noconfig.cmake")
   endif()
 endif()
 

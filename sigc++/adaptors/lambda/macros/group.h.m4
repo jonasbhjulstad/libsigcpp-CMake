@@ -44,18 +44,18 @@ dnl Please someone get a gun!
   template <LOOP(class T_arg%1, $2)>
   typename deduce_result_type<LOOP(T_arg%1,$2)>::type
   operator() (LOOP(T_arg%1 _A_%1, $2)) const
-    { return this->func_.SIGC_WORKAROUND_OPERATOR_PARENTHESES<LOOP([
+    { return this->func_.template SIGC_WORKAROUND_OPERATOR_PARENTHESES<LOOP([
           typename value%1_type::template deduce_result_type<LOOP(T_arg%1,$2)>::type],$1)>(LOOP([
-        this->value%1_.SIGC_WORKAROUND_OPERATOR_PARENTHESES<LOOP([
+        this->value%1_.template SIGC_WORKAROUND_OPERATOR_PARENTHESES<LOOP([
           _P_(T_arg%1)],$2)>(_L_)],$1)); }
 
   #ifndef SIGC_TEMPLATE_SPECIALIZATION_OPERATOR_OVERLOAD
   template <LOOP(class T_arg%1, $2)>
   typename deduce_result_type<LOOP(T_arg%1,$2)>::type
   sun_forte_workaround (LOOP(T_arg%1 _A_%1, $2)) const
-    { return this->func_.SIGC_WORKAROUND_OPERATOR_PARENTHESES<LOOP([
+    { return this->func_.template SIGC_WORKAROUND_OPERATOR_PARENTHESES<LOOP([
           typename value%1_type::template deduce_result_type<LOOP(T_arg%1,$2)>::type],$1)>(LOOP([
-        this->value%1_.SIGC_WORKAROUND_OPERATOR_PARENTHESES<LOOP([
+        this->value%1_.template SIGC_WORKAROUND_OPERATOR_PARENTHESES<LOOP([
           _P_(T_arg%1)],$2)>(_L_)],$1)); }
   #endif //SIGC_TEMPLATE_SPECIALIZATION_OPERATOR_OVERLOAD
 

@@ -37,7 +37,7 @@ FOR(1, eval($2-1),[
   template <LOOP([class T_arg%1], eval($2-1))>
   typename deduce_result_type<LOOP(T_arg%1,eval($2-1))>::type
   operator()(LOOP(T_arg%1 _A_arg%1,eval($2-1)))
-    { return this->functor_.SIGC_WORKAROUND_OPERATOR_PARENTHESES<LIST(LOOP([_P_(T_arg%1)],eval($1-1)), _P_(typename unwrap_reference<T_bound>::type), FOR($1,eval($2-1),[_P_(T_arg%1),]))>
+    { return this->functor_.template SIGC_WORKAROUND_OPERATOR_PARENTHESES<LIST(LOOP([_P_(T_arg%1)],eval($1-1)), _P_(typename unwrap_reference<T_bound>::type), FOR($1,eval($2-1),[_P_(T_arg%1),]))>
         (LIST(LOOP(_A_arg%1,eval($1-1)), bound_.invoke(), FOR($1,eval($2-1),[_A_arg%1,])));
     }
 
@@ -45,7 +45,7 @@ FOR(1, eval($2-1),[
   template <LOOP([class T_arg%1], eval($2-1))>
   typename deduce_result_type<LOOP(T_arg%1,eval($2-1))>::type
   sun_forte_workaround(LOOP(T_arg%1 _A_arg%1,eval($2-1)))
-    { return this->functor_.SIGC_WORKAROUND_OPERATOR_PARENTHESES<LIST(LOOP([_P_(T_arg%1)],eval($1-1)), _P_(typename unwrap_reference<T_bound>::type), FOR($1,eval($2-1),[_P_(T_arg%1),]))>
+    { return this->functor_.template SIGC_WORKAROUND_OPERATOR_PARENTHESES<LIST(LOOP([_P_(T_arg%1)],eval($1-1)), _P_(typename unwrap_reference<T_bound>::type), FOR($1,eval($2-1),[_P_(T_arg%1),]))>
         (LIST(LOOP(_A_arg%1,eval($1-1)), bound_.invoke(), FOR($1,eval($2-1),[_A_arg%1,])));
     }
   #endif
@@ -62,7 +62,7 @@ FOR(1, eval($2-1),[
   template <LOOP([class T_arg%1], eval($2-1))>
   typename deduce_result_type<LOOP(T_arg%1,eval($2-1))>::type
   operator()(LOOP(T_arg%1 _A_arg%1, eval($2-1)))
-    { return this->functor_.SIGC_WORKAROUND_OPERATOR_PARENTHESES<LIST(LOOP([_P_(T_arg%1)],eval($2-1)), LOOP(_P_(typename unwrap_reference<T_type%1>::type), $1))>
+    { return this->functor_.template SIGC_WORKAROUND_OPERATOR_PARENTHESES<LIST(LOOP([_P_(T_arg%1)],eval($2-1)), LOOP(_P_(typename unwrap_reference<T_type%1>::type), $1))>
         (LIST(LOOP(_A_arg%1,eval($2-1)), LOOP(bound%1_.invoke(), $1)));
     }
 
@@ -70,7 +70,7 @@ FOR(1, eval($2-1),[
   template <LOOP([class T_arg%1], eval($2-1))>
   typename deduce_result_type<LOOP(T_arg%1,eval($2-1))>::type
   sun_forte_workaround(LOOP(T_arg%1 _A_arg%1, eval($2-1)))
-    { return this->functor_.SIGC_WORKAROUND_OPERATOR_PARENTHESES<LIST(LOOP([_P_(T_arg%1)],eval($2-1)), LOOP(_P_(typename unwrap_reference<T_type%1>::type), $1))>
+    { return this->functor_.template SIGC_WORKAROUND_OPERATOR_PARENTHESES<LIST(LOOP([_P_(T_arg%1)],eval($2-1)), LOOP(_P_(typename unwrap_reference<T_type%1>::type), $1))>
         (LIST(LOOP(_A_arg%1,eval($2-1)), LOOP(bound%1_.invoke(), $1)));
     }
   #endif
@@ -105,7 +105,7 @@ ifelse($1,0,[#endif
   operator()()
   {
     //Note: The AIX compiler sometimes gives linker errors if we do not define this in the class.
-    return this->functor_.SIGC_WORKAROUND_OPERATOR_PARENTHESES<_P_(typename unwrap_reference<T_bound>::type)> (bound_.invoke());
+    return this->functor_.template SIGC_WORKAROUND_OPERATOR_PARENTHESES<_P_(typename unwrap_reference<T_bound>::type)> (bound_.invoke());
   }
 
 FOR(eval($1+1),CALL_SIZE,[[BIND_OPERATOR_LOCATION(eval($1+1),%1)]])dnl
@@ -159,7 +159,7 @@ ifelse($1,1,[#endif // DOXYGEN_SHOULD_SKIP_THIS
   operator()()
   {
     //Note: The AIX compiler sometimes gives linker errors if we do not define this in the class.
-    return this->functor_.SIGC_WORKAROUND_OPERATOR_PARENTHESES<LOOP(_P_(typename unwrap_reference<T_type%1>::type), $1)> (LOOP(bound%1_.invoke(), $1));
+    return this->functor_.template SIGC_WORKAROUND_OPERATOR_PARENTHESES<LOOP(_P_(typename unwrap_reference<T_type%1>::type), $1)> (LOOP(bound%1_.invoke(), $1));
   }
 
 FOR(2,eval(CALL_SIZE-$1+1),[[BIND_OPERATOR_COUNT($1,%1)]])dnl

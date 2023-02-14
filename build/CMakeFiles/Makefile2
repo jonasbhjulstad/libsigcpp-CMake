@@ -78,7 +78,7 @@ clean: sigc++/clean
 # Directory level rules for directory sigc++
 
 # Recursive "all" directory target.
-sigc++/all: sigc++/CMakeFiles/sigc-2.0.dir/all
+sigc++/all: sigc++/CMakeFiles/SigCpp.dir/all
 .PHONY : sigc++/all
 
 # Recursive "preinstall" directory target.
@@ -86,34 +86,34 @@ sigc++/preinstall:
 .PHONY : sigc++/preinstall
 
 # Recursive "clean" directory target.
-sigc++/clean: sigc++/CMakeFiles/sigc-2.0.dir/clean
+sigc++/clean: sigc++/CMakeFiles/SigCpp.dir/clean
 .PHONY : sigc++/clean
 
 #=============================================================================
-# Target rules for target sigc++/CMakeFiles/sigc-2.0.dir
+# Target rules for target sigc++/CMakeFiles/SigCpp.dir
 
 # All Build rule for target.
-sigc++/CMakeFiles/sigc-2.0.dir/all:
-	$(MAKE) $(MAKESILENT) -f sigc++/CMakeFiles/sigc-2.0.dir/build.make sigc++/CMakeFiles/sigc-2.0.dir/depend
-	$(MAKE) $(MAKESILENT) -f sigc++/CMakeFiles/sigc-2.0.dir/build.make sigc++/CMakeFiles/sigc-2.0.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/man/sigc++-cmake/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target sigc-2.0"
-.PHONY : sigc++/CMakeFiles/sigc-2.0.dir/all
+sigc++/CMakeFiles/SigCpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f sigc++/CMakeFiles/SigCpp.dir/build.make sigc++/CMakeFiles/SigCpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f sigc++/CMakeFiles/SigCpp.dir/build.make sigc++/CMakeFiles/SigCpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/man/sigc++-cmake/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target SigCpp"
+.PHONY : sigc++/CMakeFiles/SigCpp.dir/all
 
 # Build rule for subdir invocation for target.
-sigc++/CMakeFiles/sigc-2.0.dir/rule: cmake_check_build_system
+sigc++/CMakeFiles/SigCpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/man/sigc++-cmake/build/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sigc++/CMakeFiles/sigc-2.0.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sigc++/CMakeFiles/SigCpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/man/sigc++-cmake/build/CMakeFiles 0
-.PHONY : sigc++/CMakeFiles/sigc-2.0.dir/rule
+.PHONY : sigc++/CMakeFiles/SigCpp.dir/rule
 
 # Convenience name for target.
-sigc-2.0: sigc++/CMakeFiles/sigc-2.0.dir/rule
-.PHONY : sigc-2.0
+SigCpp: sigc++/CMakeFiles/SigCpp.dir/rule
+.PHONY : SigCpp
 
 # clean rule for target.
-sigc++/CMakeFiles/sigc-2.0.dir/clean:
-	$(MAKE) $(MAKESILENT) -f sigc++/CMakeFiles/sigc-2.0.dir/build.make sigc++/CMakeFiles/sigc-2.0.dir/clean
-.PHONY : sigc++/CMakeFiles/sigc-2.0.dir/clean
+sigc++/CMakeFiles/SigCpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f sigc++/CMakeFiles/SigCpp.dir/build.make sigc++/CMakeFiles/SigCpp.dir/clean
+.PHONY : sigc++/CMakeFiles/SigCpp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

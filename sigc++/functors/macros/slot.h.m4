@@ -189,7 +189,7 @@ FOR(1, $1,[
 ifelse($1,0,[
       return (typed_rep->functor_)();
 ],[
-      return (typed_rep->functor_).SIGC_WORKAROUND_OPERATOR_PARENTHESES<LOOP([_R_(T_arg%1)],$1)>
+      return (typed_rep->functor_).template SIGC_WORKAROUND_OPERATOR_PARENTHESES<LOOP([_R_(T_arg%1)],$1)>
                (LOOP(a_%1, $1));
 ])dnl
     }

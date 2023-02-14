@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsigc-2.0.a "CMakeFiles/sigc-2.0.dir/connection.cc.o" "CMakeFiles/sigc-2.0.dir/signal.cc.o" "CMakeFiles/sigc-2.0.dir/signal_base.cc.o" "CMakeFiles/sigc-2.0.dir/trackable.cc.o" "CMakeFiles/sigc-2.0.dir/adaptors/lambda/lambda.cc.o" "CMakeFiles/sigc-2.0.dir/functors/slot.cc.o" "CMakeFiles/sigc-2.0.dir/functors/slot_base.cc.o"
-/usr/bin/ranlib libsigc-2.0.a

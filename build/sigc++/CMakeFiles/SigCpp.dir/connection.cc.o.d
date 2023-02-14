@@ -1,7 +1,8 @@
-sigc++/CMakeFiles/sigc-2.0.dir/functors/slot.cc.o: \
- /home/man/sigc++-cmake/sigc++/functors/slot.cc \
- /usr/include/stdc-predef.h /home/man/sigc++-cmake/sigc++/functors/slot.h \
- /home/man/sigc++-cmake/sigc++/trackable.h /usr/include/c++/12.2.1/list \
+sigc++/CMakeFiles/SigCpp.dir/connection.cc.o: \
+ /home/man/sigc++-cmake/sigc++/connection.cc /usr/include/stdc-predef.h \
+ /home/man/sigc++-cmake/sigc++/connection.h \
+ /home/man/sigc++-cmake/build/sigc++config.h \
+ /home/man/sigc++-cmake/sigc++/signal.h /usr/include/c++/12.2.1/list \
  /usr/include/c++/12.2.1/bits/stl_algobase.h \
  /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -41,9 +42,13 @@ sigc++/CMakeFiles/sigc-2.0.dir/functors/slot.cc.o: \
  /usr/include/c++/12.2.1/bits/allocated_ptr.h \
  /usr/include/c++/12.2.1/ext/aligned_buffer.h \
  /usr/include/c++/12.2.1/bits/list.tcc \
- /home/man/sigc++-cmake/build/sigc++config.h \
- /home/man/sigc++-cmake/sigc++/visit_each.h \
+ /home/man/sigc++-cmake/sigc++/signal_base.h \
+ /usr/include/c++/12.2.1/cstddef \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/stddef.h \
  /home/man/sigc++-cmake/sigc++/type_traits.h \
+ /home/man/sigc++-cmake/sigc++/trackable.h \
+ /home/man/sigc++-cmake/sigc++/functors/slot.h \
+ /home/man/sigc++-cmake/sigc++/visit_each.h \
  /home/man/sigc++-cmake/sigc++/adaptors/adaptor_trait.h \
  /home/man/sigc++-cmake/sigc++/functors/functor_trait.h \
  /home/man/sigc++-cmake/sigc++/functors/ptr_fun.h \

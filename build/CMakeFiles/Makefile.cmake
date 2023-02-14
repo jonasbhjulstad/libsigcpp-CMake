@@ -13,7 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.2/CMakeSystem.cmake"
   "/home/man/sigc++-cmake/cmake/Config.cmake.in"
-  "/home/man/sigc++-cmake/cmake/SigC++ConfigVersion.cmake.in"
+  "/home/man/sigc++-cmake/cmake/SigCppConfigVersion.cmake.in"
   "/home/man/sigc++-cmake/cmake/install.cmake"
   "/home/man/sigc++-cmake/config.h.cmake"
   "/home/man/sigc++-cmake/sigc++/CMakeLists.txt"
@@ -50,14 +50,14 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "sigc++/config.h"
   "sigc++config.h"
   "sigc++/sigc++config.h"
-  "SigC++ConfigVersion.cmake"
-  "SigC++Config.cmake"
-  "sigc++Config.cmake"
+  "SigCppConfigVersion.cmake"
+  "SigCppConfig.cmake"
+  "SigCppConfig.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "sigc++/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "sigc++/CMakeFiles/sigc-2.0.dir/DependInfo.cmake"
+  "sigc++/CMakeFiles/SigCpp.dir/DependInfo.cmake"
   )

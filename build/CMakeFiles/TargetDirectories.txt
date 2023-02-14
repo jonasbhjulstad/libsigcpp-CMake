@@ -4,7 +4,7 @@
 /home/man/sigc++-cmake/build/CMakeFiles/install.dir
 /home/man/sigc++-cmake/build/CMakeFiles/install/local.dir
 /home/man/sigc++-cmake/build/CMakeFiles/install/strip.dir
-/home/man/sigc++-cmake/build/sigc++/CMakeFiles/sigc-2.0.dir
+/home/man/sigc++-cmake/build/sigc++/CMakeFiles/SigCpp.dir
 /home/man/sigc++-cmake/build/sigc++/CMakeFiles/edit_cache.dir
 /home/man/sigc++-cmake/build/sigc++/CMakeFiles/rebuild_cache.dir
 /home/man/sigc++-cmake/build/sigc++/CMakeFiles/list_install_components.dir
