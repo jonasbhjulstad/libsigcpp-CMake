@@ -57,6 +57,6 @@ IF(CMAKE_COMPILER_IS_GNUCXX AND NOT WIN32)
 ENDIF(CMAKE_COMPILER_IS_GNUCXX AND NOT WIN32) 
 
 add_library(SigCpp STATIC ${SOURCES})
-target_include_directories(SigCpp PUBLIC $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/sigc++> $<INSTALL_INTERFACE:SigCpp>)
+target_include_directories(SigCpp PUBLIC $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/sigc++/> $<INSTALL_INTERFACE:SigCpp>)
 add_dependencies(SigCpp autogen)
 
