@@ -40,10 +40,9 @@ sigc++/CMakeFiles/SigCpp.dir/trackable.cc.o: \
  /usr/include/c++/12.2.1/bits/allocated_ptr.h \
  /usr/include/c++/12.2.1/ext/aligned_buffer.h \
  /usr/include/c++/12.2.1/bits/list.tcc \
- /home/man/sigc++-cmake/build/sigc++config.h \
- /usr/include/c++/12.2.1/iostream /usr/include/c++/12.2.1/ostream \
- /usr/include/c++/12.2.1/ios /usr/include/c++/12.2.1/iosfwd \
- /usr/include/c++/12.2.1/bits/stringfwd.h \
+ /home/man/sigc++-cmake/sigc++config.h /usr/include/c++/12.2.1/iostream \
+ /usr/include/c++/12.2.1/ostream /usr/include/c++/12.2.1/ios \
+ /usr/include/c++/12.2.1/iosfwd /usr/include/c++/12.2.1/bits/stringfwd.h \
  /usr/include/c++/12.2.1/bits/postypes.h /usr/include/c++/12.2.1/cwchar \
  /usr/include/wchar.h /usr/include/bits/libc-header-start.h \
  /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \

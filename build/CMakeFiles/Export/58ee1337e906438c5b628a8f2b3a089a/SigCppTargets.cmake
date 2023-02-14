@@ -47,13 +47,13 @@ unset(_cmake_expected_targets)
 
 
 # The installation prefix configured by this project.
-set(_IMPORT_PREFIX "/home/man/sigc++-cmake/build")
+set(_IMPORT_PREFIX "/usr/local")
 
 # Create imported target SigCpp
 add_library(SigCpp STATIC IMPORTED)
 
 set_target_properties(SigCpp PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/SigCpp;/home/man/sigc++-cmake/build/lib/SigCpp/include"
+  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/SigCpp;/usr/local/include/SigCpp"
 )
 
 # Load information for each installed configuration.

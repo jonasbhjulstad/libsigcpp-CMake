@@ -1,7 +1,7 @@
 sigc++/CMakeFiles/SigCpp.dir/connection.cc.o: \
  /home/man/sigc++-cmake/sigc++/connection.cc /usr/include/stdc-predef.h \
  /home/man/sigc++-cmake/sigc++/connection.h \
- /home/man/sigc++-cmake/build/sigc++config.h \
+ /home/man/sigc++-cmake/sigc++config.h \
  /home/man/sigc++-cmake/sigc++/signal.h /usr/include/c++/12.2.1/list \
  /usr/include/c++/12.2.1/bits/stl_algobase.h \
  /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/c++config.h \

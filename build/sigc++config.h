@@ -50,7 +50,7 @@
 
 /* does the C++ compiler support the use of a particular specialization when
    calling operator() template methods. */
-#define SIGC_GCC_TEMPLATE_SPECIALIZATION_OPERATOR_OVERLOAD 1
+/* #undef SIGC_GCC_TEMPLATE_SPECIALIZATION_OPERATOR_OVERLOAD */
 
 /* Defined when the libstdc++ declares the std-namespace */
 #define SIGC_HAVE_NAMESPACE_STD 1

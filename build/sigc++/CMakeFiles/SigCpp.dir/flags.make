@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DHAVE_CONFIG_H
 
-CXX_INCLUDES = -I/home/man/sigc++-cmake/build -I/home/man/sigc++-cmake/build/sigc++ -I/home/man/sigc++-cmake -I/home/man/sigc++-cmake/sigc++
+CXX_INCLUDES = -I/home/man/sigc++-cmake
 
 CXX_FLAGS = 
 

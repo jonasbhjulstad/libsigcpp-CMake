@@ -4,7 +4,7 @@ sigc++/CMakeFiles/SigCpp.dir/adaptors/lambda/lambda.cc.o: \
  /home/man/sigc++-cmake/sigc++/adaptors/lambda/select.h \
  /home/man/sigc++-cmake/sigc++/adaptors/lambda/base.h \
  /home/man/sigc++-cmake/sigc++/adaptors/adaptor_trait.h \
- /home/man/sigc++-cmake/build/sigc++config.h \
+ /home/man/sigc++-cmake/sigc++config.h \
  /home/man/sigc++-cmake/sigc++/visit_each.h \
  /home/man/sigc++-cmake/sigc++/type_traits.h \
  /home/man/sigc++-cmake/sigc++/functors/functor_trait.h \

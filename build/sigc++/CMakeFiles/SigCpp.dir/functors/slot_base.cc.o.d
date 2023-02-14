@@ -2,7 +2,7 @@ sigc++/CMakeFiles/SigCpp.dir/functors/slot_base.cc.o: \
  /home/man/sigc++-cmake/sigc++/functors/slot_base.cc \
  /usr/include/stdc-predef.h \
  /home/man/sigc++-cmake/sigc++/functors/slot_base.h \
- /home/man/sigc++-cmake/build/sigc++config.h \
+ /home/man/sigc++-cmake/sigc++config.h \
  /home/man/sigc++-cmake/sigc++/trackable.h /usr/include/c++/12.2.1/list \
  /usr/include/c++/12.2.1/bits/stl_algobase.h \
  /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/c++config.h \

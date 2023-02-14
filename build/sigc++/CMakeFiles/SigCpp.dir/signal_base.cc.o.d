@@ -42,7 +42,7 @@ sigc++/CMakeFiles/SigCpp.dir/signal_base.cc.o: \
  /usr/include/c++/12.2.1/bits/allocated_ptr.h \
  /usr/include/c++/12.2.1/ext/aligned_buffer.h \
  /usr/include/c++/12.2.1/bits/list.tcc \
- /home/man/sigc++-cmake/build/sigc++config.h \
+ /home/man/sigc++-cmake/sigc++config.h \
  /home/man/sigc++-cmake/sigc++/type_traits.h \
  /home/man/sigc++-cmake/sigc++/trackable.h \
  /home/man/sigc++-cmake/sigc++/functors/slot.h \

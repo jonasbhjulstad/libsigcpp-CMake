@@ -1,5 +1,5 @@
-project(libsigc++)
-cmake_minimum_required(VERSION 2.8)
+project(SigCpp)
+cmake_minimum_required(VERSION 3.2)
 
 set(PACKAGE_VERSION "2.3.1")
 set(SIGCXX_MAJOR_VERSION "2")
@@ -10,11 +10,6 @@ COMMAND /bin/bash ./autogen.sh
 WORKING_DIRECTORY ${PROJECT_SOURCE_DIR})
 include(Configure_config.cmake)
 
-include_directories(
-	${CMAKE_BINARY_DIR}
-	${CMAKE_BINARY_DIR}/sigc++
-	${CMAKE_SOURCE_DIR}
-)
 
 add_subdirectory(sigc++)
 

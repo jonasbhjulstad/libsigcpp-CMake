@@ -43,7 +43,7 @@ sigc++/CMakeFiles/SigCpp.dir/signal.cc.o: \
  /home/man/sigc++-cmake/sigc++/signal_base.h \
  /usr/include/c++/12.2.1/cstddef \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/stddef.h \
- /home/man/sigc++-cmake/build/sigc++config.h \
+ /home/man/sigc++-cmake/sigc++config.h \
  /home/man/sigc++-cmake/sigc++/type_traits.h \
  /home/man/sigc++-cmake/sigc++/trackable.h \
  /home/man/sigc++-cmake/sigc++/functors/slot.h \

@@ -21,7 +21,7 @@
 #include <sigc++/trackable.h>
 #include <iostream>
 
-SIGC_USING_STD(ostream)
+SIGC_USING_STD(std::ostream)
 
 using namespace std;
 

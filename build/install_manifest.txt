@@ -1,8 +1,0 @@
-/home/man/sigc++-cmake/build/lib/cmake/SigCpp/SigCppConfig.cmake
-/home/man/sigc++-cmake/build/lib/cmake/SigCpp/SigCppConfigVersion.cmake
-/home/man/sigc++-cmake/build/lib/cmake/SigCpp/SigCppConfig.cmake
-/home/man/sigc++-cmake/build/lib/libSigCpp.a
-/home/man/sigc++-cmake/build/lib/SigCpp/include/sigc++config.h
-/home/man/sigc++-cmake/build/lib/libSigCpp.a
-/home/man/sigc++-cmake/build/lib/cmake/SigCpp/SigCppTargets.cmake
-/home/man/sigc++-cmake/build/lib/cmake/SigCpp/SigCppTargets-noconfig.cmake
